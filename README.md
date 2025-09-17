@@ -46,10 +46,6 @@ Activate the virtual environment:
 ```cmd
 .venv\Scripts\activate
 ```
-- Windows (PowerShell):
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
 - macOS/Linux:
 ```bash
 source .venv/bin/activate
@@ -144,6 +140,12 @@ TARGETPLATFORM=linux/arm64 docker compose up --build
 - VNC Viewer (for watching browser interactions): Open `http://localhost:6080/vnc.html`
   - Default VNC password: "youvncpassword"
   - Can be changed by setting `VNC_PASSWORD` in your `.env` file
+for ollama model
+go to terminal and type 
+-ollama pull <model>
+-ollama run <model>
+after this choose ollama provider in the ui and respective model and your good to go...
+
 
 ## Changelog
 - [x] **2025/01/26:** Thanks to @vvincent1234. Now browser-use-webui can combine with DeepSeek-r1 to engage in deep thinking!
